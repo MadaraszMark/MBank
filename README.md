@@ -6,7 +6,7 @@ _Egy biztonságos és modern internetbanki alkalmazás JavaFX-szel._
 ![Java](https://img.shields.io/badge/java-71.7%25-blue)
 ![Languages](https://img.shields.io/badge/languages-2-blue)
 
-_Built with the tools and technologies:_
+_A következő eszközökkel és technológiákkal készült:_
 
 ![Java](https://img.shields.io/badge/-Java-blue?style=for-the-badge&logo=java)
 ![FXML](https://img.shields.io/badge/-FXML-informational?style=for-the-badge)
@@ -21,8 +21,6 @@ _Built with the tools and technologies:_
   - [Előfeltételek](#előfeltételek)
   - [Telepítés](#telepítés)
   - [Használat](#használat)
-  - [Tesztelés](#tesztelés)
-- [Fejlesztési lehetőségek](#fejlesztési-lehetőségek)
 
 ---
 
