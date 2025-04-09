@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="1100.0" prefWidth="1500.0" stylesheets="@../css/Transactions.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.TransactionsController">
+   <children>
+      <BorderPane prefHeight="1100.0" prefWidth="1500.0">
+         <left>
+            <VBox fx:id="VBoxTransactionsSideMenu" prefHeight="1070.0" prefWidth="216.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="imgMBankImage" fitHeight="65.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/MBankIco.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblMBankTitle" prefHeight="52.0" prefWidth="205.0" stylesheets="@../css/ClientMenu.css" text="MBank" />
+                  <Button fx:id="btnDashboard" mnemonicParsing="false" onMouseClicked="#handleMainMenu" prefHeight="55.0" prefWidth="208.0" stylesheets="@../css/ClientMenu.css" text="Kezdőlap">
+                     <graphic>
+                        <FontAwesomeIconView fx:id="fontDashboard" glyphName="HOME" scaleZ="0.0" size="20" translateX="5.0" />
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="30.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnTransactions" mnemonicParsing="false" prefHeight="55.0" prefWidth="208.0" text="Tranzakciók">
+                     <graphic>
+                        <FontAwesomeIconView fx:id="fontTransactions" glyphName="BOOK" size="20" translateX="5.0" />
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnAccounts" mnemonicParsing="false" onMouseClicked="#handleAccounts" prefHeight="55.0" prefWidth="208.0" stylesheets="@../css/ClientMenu.css" text="Számlák">
+                     <graphic>
+                        <FontAwesomeIconView fx:id="fontAccounts" glyphName="MONEY" size="20" translateX="5.0" />
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Separator fx:id="spSeparator" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="150.0" styleClass="line" stylesheets="@../css/ClientMenu.css" />
+                  <Button fx:id="btnProfile" mnemonicParsing="false" onMouseClicked="#handleProfile" prefHeight="55.0" prefWidth="208.0" text="Profil">
+                     <graphic>
+                        <FontAwesomeIconView fx:id="fontProfiles" fill="WHITE" glyphName="USER" size="20" translateX="5.0" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnLogout" mnemonicParsing="false" onMouseClicked="#handleLogout" prefHeight="55.0" prefWidth="208.0" text="Kijelentkezés">
+                     <graphic>
+                        <FontAwesomeIconView fx:id="fontLogout" fill="WHITE" glyphName="EXTERNAL_LINK" size="20" translateX="4.0" />
+                     </graphic>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <VBox fx:id="VBoxReportMenu" alignment="CENTER" prefHeight="200.0" prefWidth="186.0">
+                     <VBox.margin>
+                        <Insets bottom="-15.0" left="-15.0" right="-15.0" top="425.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="lblReportTitle" alignment="CENTER" contentDisplay="CENTER" prefWidth="200.0" text="Hibabejelentés" textAlignment="CENTER" wrapText="true" />
+                        <Label fx:id="lblReport" prefHeight="89.0" prefWidth="166.0" text="Ezen keresztül jelezheted a hibákat vagy ötleteidet." />
+                        <Button fx:id="btnReport" mnemonicParsing="false" onMouseClicked="#openReportWindow" prefHeight="55.0" prefWidth="208.0" text="Hibabejelentés">
+                           <graphic>
+                              <FontAwesomeIconView fx:id="fontReport" fill="WHITE" glyphName="PLUS" scaleZ="0.0" size="20" translateX="7.0" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="15.0" left="10.0" top="15.0" />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+         <center>
+            <VBox fx:id="VBoxTransactionsMain" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="lblTransactionsTitle" alignment="CENTER" prefHeight="133.0" prefWidth="1282.0" text="Tranzakciók">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ScrollPane fx:id="scScrollPaneTransactions" prefHeight="945.0" prefWidth="1203.0">
+                     <content>
+                        <VBox fx:id="VBoxTransactionsScrollPane" alignment="CENTER" maxHeight="-Infinity" prefHeight="899.0" prefWidth="1203.0" />
+                     </content>
+                     <VBox.margin>
+                        <Insets left="50.0" right="10.0" />
+                     </VBox.margin>
+                  </ScrollPane>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="1100.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.ClientMenuController">
+   <children>
+      <BorderPane fx:id="borderPaneMain" prefHeight="1100.0" prefWidth="1500.0" stylesheets="@../css/ClientMenu.css">
+         <left>
+            <VBox fx:id="VBoxSideMenu" prefHeight="1070.0" prefWidth="216.0" stylesheets="@../css/ClientMenu.css" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="imgMBankImage" fitHeight="65.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/MBankIco.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblMBankTitle" prefHeight="52.0" prefWidth="205.0" stylesheets="@../css/ClientMenu.css" text="MBank" />
+                  <Button fx:id="btnDashboard" mnemonicParsing="false" prefHeight="55.0" prefWidth="208.0" stylesheets="@../css/ClientMenu.css" text="Kezdőlap">
+                     <graphic>
+                        <FontAwesomeIconView fx:id="fontDashboard" glyphName="HOME" scaleZ="0.0" size="20" translateX="5.0" />
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="30.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnTransactions" mnemonicParsing="false" onMouseClicked="#handleTransactions" prefHeight="55.0" prefWidth="208.0" text="Tranzakciók">
+                     <graphic>
+                        <FontAwesomeIconView fx:id="fontTransactions" glyphName="BOOK" size="20" translateX="5.0" />
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnAccounts" mnemonicParsing="false" onMouseClicked="#handleAccounts" prefHeight="55.0" prefWidth="208.0" stylesheets="@../css/ClientMenu.css" text="Számlák">
+                     <graphic>
+                        <FontAwesomeIconView fx:id="fontAccounts" glyphName="MONEY" size="20" translateX="5.0" />
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Separator fx:id="spSeparator" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="150.0" styleClass="line" stylesheets="@../css/ClientMenu.css" />
+                  <Button fx:id="btnProfile" mnemonicParsing="false" onMouseClicked="#handleProfile" prefHeight="55.0" prefWidth="208.0" text="Profil">
+                     <graphic>
+                        <FontAwesomeIconView fx:id="fontProfiles" fill="WHITE" glyphName="USER" size="20" translateX="5.0" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnLogout" mnemonicParsing="false" onMouseClicked="#handleLogout" prefHeight="55.0" prefWidth="208.0" text="Kijelentkezés">
+                     <graphic>
+                        <FontAwesomeIconView fx:id="fontLogout" fill="WHITE" glyphName="EXTERNAL_LINK" size="20" translateX="4.0" />
+                     </graphic>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <VBox fx:id="VBoxReportMenu" alignment="CENTER" prefHeight="200.0" prefWidth="186.0">
+                     <VBox.margin>
+                        <Insets bottom="-15.0" left="-15.0" right="-15.0" top="425.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="lblReportTitle" alignment="CENTER" contentDisplay="CENTER" prefWidth="200.0" text="Hibabejelentés" textAlignment="CENTER" wrapText="true" />
+                        <Label fx:id="lblReport" prefHeight="89.0" prefWidth="166.0" text="Ezen keresztül jelezheted a hibákat vagy ötleteidet." />
+                        <Button fx:id="btnReport" mnemonicParsing="false" onMouseClicked="#openReportWindow" prefHeight="55.0" prefWidth="208.0" text="Hibabejelentés">
+                           <graphic>
+                              <FontAwesomeIconView fx:id="fontReport" fill="WHITE" glyphName="PLUS" scaleZ="0.0" size="20" translateX="7.0" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="15.0" left="10.0" top="15.0" />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+         <center>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <top>
+                  <HBox fx:id="HboxHeader" prefHeight="109.0" prefWidth="1274.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="lblWelcomeMessage" prefHeight="89.0" prefWidth="166.0" text="Szia,">
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin></Label>
+                        <Label fx:id="lblWelcomeMessageName" prefHeight="89.0" prefWidth="755.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin></Label>
+                        <Label fx:id="lblWelcomeDate" alignment="CENTER_RIGHT" prefHeight="115.0" prefWidth="525.0">
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin></Label>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets left="15.0" right="15.0" top="15.0" />
+                     </BorderPane.margin>
+                  </HBox>
+               </top>
+               <bottom>
+                  <HBox prefHeight="658.0" prefWidth="1311.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox fx:id="VBoxLastTransactionsList" prefHeight="546.0" prefWidth="878.0">
+                           <HBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="80.0" />
+                           </HBox.margin>
+                           <children>
+                              <AnchorPane prefHeight="610.0" prefWidth="878.0">
+                                 <children>
+                                    <Label fx:id="lblLatestTransactionsTitle" alignment="CENTER" layoutY="6.0" prefHeight="86.0" prefWidth="852.0" text="Legutóbbi tranzakciók">
+                                       <padding>
+                                          <Insets bottom="-10.0" />
+                                       </padding>
+                                    </Label>
+                                    <AnchorPane fx:id="anchPaneLatesTransaction1" layoutX="14.0" layoutY="60.0" prefHeight="86.0" prefWidth="821.0" AnchorPane.topAnchor="100.0">
+                                       <children>
+                                          <FontAwesomeIconView fx:id="fontAwesomeIconArrowRight1" glyphName="LONG_ARROW_RIGHT" layoutX="20.0" layoutY="40.0" size="35" styleClass="arrow-muted" wrappingWidth="55.0" />
+                                          <FontAwesomeIconView fx:id="fontAwesomeIconArrowLeft1" glyphName="LONG_ARROW_LEFT" layoutX="20.0" layoutY="70.0" size="35" styleClass="arrow-muted" wrappingWidth="32.0" />
+                                          <Label fx:id="lblLatesTransactionsDate1" layoutX="120.0" layoutY="14.0" prefHeight="57.0" prefWidth="116.0" text="2011-12-33" />
+                                          <Label fx:id="lblLatesTransactionsToName1" layoutX="240.0" layoutY="14.0" prefHeight="57.0" prefWidth="116.0" text="\@Mark" />
+                                          <Separator fx:id="sepSeparatorTransactions1" layoutX="370.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="86.0" prefWidth="37.0" />
+                                          <Label fx:id="lblLatesTransactionsFromName1" layoutX="476.0" layoutY="14.0" prefHeight="57.0" prefWidth="162.0" text="\@Mark" />
+                                          <FontAwesomeIconView fx:id="fontAwesomeIconBell1" glyphName="BELL" layoutX="641.0" layoutY="53.0" size="30" />
+                                          <Label fx:id="lblLatesTransactionsMoney1" layoutX="691.0" layoutY="14.0" prefHeight="59.0" prefWidth="116.0" text="100 HUF" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane fx:id="anchPaneLatesTransaction2" layoutX="14.0" layoutY="160.0" prefHeight="86.0" prefWidth="821.0" AnchorPane.topAnchor="220.0">
+                                       <children>
+                                          <FontAwesomeIconView fx:id="fontAwesomeIconArrowRight2" glyphName="LONG_ARROW_RIGHT" layoutX="20.0" layoutY="40.0" size="35" styleClass="arrow-muted" wrappingWidth="55.0" />
+                                          <FontAwesomeIconView fx:id="fontAwesomeIconArrowLeft2" glyphName="LONG_ARROW_LEFT" layoutX="20.0" layoutY="70.0" size="35" styleClass="arrow-muted" wrappingWidth="32.0" />
+                                          <Label fx:id="lblLatesTransactionsDate2" layoutX="120.0" layoutY="14.0" prefHeight="57.0" prefWidth="116.0" text="2011-12-33" />
+                                          <Label fx:id="lblLatesTransactionsToName2" layoutX="240.0" layoutY="14.0" prefHeight="57.0" prefWidth="116.0" text="\@Mark" />
+                                          <Separator fx:id="sepSeparatorTransactions2" layoutX="370.0" orientation="VERTICAL" prefHeight="86.0" prefWidth="37.0" styleClass="line" stylesheets="@../css/ClientMenu.css" />
+                                          <Label fx:id="lblLatesTransactionsFromName2" layoutX="476.0" layoutY="14.0" prefHeight="57.0" prefWidth="162.0" text="\@Mark" />
+                                          <FontAwesomeIconView fx:id="fontAwesomeIconBell2" glyphName="BELL" layoutX="641.0" layoutY="53.0" size="30" />
+                                          <Label fx:id="lblLatesTransactionsMoney2" layoutX="691.0" layoutY="14.0" prefHeight="59.0" prefWidth="116.0" text="100 HUF" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane fx:id="anchPaneLatesTransaction3" layoutX="14.0" layoutY="260.0" prefHeight="86.0" prefWidth="821.0" AnchorPane.topAnchor="340.0">
+                                       <children>
+                                          <FontAwesomeIconView fx:id="fontAwesomeIconArrowRight3" glyphName="LONG_ARROW_RIGHT" layoutX="20.0" layoutY="40.0" size="35" styleClass="arrow-muted" wrappingWidth="55.0" />
+                                          <FontAwesomeIconView fx:id="fontAwesomeIconArrowLeft3" glyphName="LONG_ARROW_LEFT" layoutX="20.0" layoutY="70.0" size="35" styleClass="arrow-muted" wrappingWidth="32.0" />
+                                          <Label fx:id="lblLatesTransactionsDate3" layoutX="120.0" layoutY="14.0" prefHeight="57.0" prefWidth="116.0" text="2011-12-33" />
+                                          <Label fx:id="lblLatesTransactionsToName3" layoutX="240.0" layoutY="14.0" prefHeight="57.0" prefWidth="116.0" text="\@Mark" />
+                                          <Separator fx:id="sepSeparatorTransactions3" layoutX="370.0" orientation="VERTICAL" prefHeight="86.0" prefWidth="37.0" styleClass="line" />
+                                          <Label fx:id="lblLatesTransactionsFromName3" layoutX="476.0" layoutY="14.0" prefHeight="57.0" prefWidth="162.0" text="\@Mark" />
+                                          <FontAwesomeIconView fx:id="fontAwesomeIconBell3" glyphName="BELL" layoutX="641.0" layoutY="53.0" size="30" />
+                                          <Label fx:id="lblLatesTransactionsMoney3" layoutX="691.0" layoutY="14.0" prefHeight="59.0" prefWidth="116.0" text="100 HUF" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane fx:id="anchPaneLatesTransaction4" layoutX="14.0" layoutY="360.0" prefHeight="86.0" prefWidth="821.0" AnchorPane.topAnchor="460.0">
+                                       <children>
+                                          <FontAwesomeIconView fx:id="fontAwesomeIconArrowRight4" glyphName="LONG_ARROW_RIGHT" layoutX="20.0" layoutY="40.0" size="35" styleClass="arrow-muted" wrappingWidth="55.0" />
+                                          <FontAwesomeIconView fx:id="fontAwesomeIconArrowLeft4" glyphName="LONG_ARROW_LEFT" layoutX="20.0" layoutY="70.0" size="35" styleClass="arrow-muted" wrappingWidth="32.0" />
+                                          <Label fx:id="lblLatesTransactionsDate4" layoutX="120.0" layoutY="14.0" prefHeight="57.0" prefWidth="116.0" text="2011-12-33" />
+                                          <Label fx:id="lblLatesTransactionsToName4" layoutX="240.0" layoutY="14.0" prefHeight="57.0" prefWidth="116.0" text="\@Mark" />
+                                          <Separator fx:id="sepSeparatorTransactions4" layoutX="370.0" orientation="VERTICAL" prefHeight="86.0" prefWidth="37.0" />
+                                          <Label fx:id="lblLatesTransactionsFromName4" layoutX="476.0" layoutY="14.0" prefHeight="57.0" prefWidth="162.0" text="\@Mark" />
+                                          <FontAwesomeIconView fx:id="fontAwesomeIconBell4" glyphName="BELL" layoutX="641.0" layoutY="53.0" size="30" />
+                                          <Label fx:id="lblLatesTransactionsMoney4" layoutX="691.0" layoutY="14.0" prefHeight="59.0" prefWidth="116.0" text="100 HUF" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="VBoxTransactions" prefHeight="658.0" prefWidth="418.0">
+                           <HBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="80.0" />
+                           </HBox.margin>
+                           <children>
+                              <Label fx:id="lblTransactionTitle" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="350.0" text="Átutalás">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="lblPayeeAddressTransaction" prefHeight="64.0" prefWidth="350.0" stylesheets="@../css/ClientMenu.css" text="Címzett számlaszám:">
+                                 <VBox.margin>
+                                    <Insets bottom="-5.0" top="-30.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="txtPayeeAdressTransaction" prefHeight="58.0" prefWidth="304.0">
+                                 <VBox.margin>
+                                    <Insets top="-20.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label fx:id="lblAmountTransaction" prefHeight="64.0" prefWidth="350.0" text="Összeg (HUF):">
+                                 <VBox.margin>
+                                    <Insets bottom="-5.0" top="-30.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="txtAmountTransaction" prefHeight="58.0" prefWidth="304.0">
+                                 <VBox.margin>
+                                    <Insets top="-20.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label fx:id="lblMessageTransaction" prefHeight="64.0" prefWidth="350.0" text="Üzenet:">
+                                 <VBox.margin>
+                                    <Insets bottom="-5.0" top="-30.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="txtMessageTransaction" prefHeight="112.0" prefWidth="418.0">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="-20.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label fx:id="lblResultTransaction" alignment="CENTER" prefHeight="55.0" prefWidth="349.0">
+                                 <VBox.margin>
+                                    <Insets bottom="-70.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Button fx:id="btnTransactionSendMoney" mnemonicParsing="false" onMouseClicked="#sendTransaction" prefHeight="58.0" prefWidth="354.0" text="Átutalás">
+                                 <VBox.margin>
+                                    <Insets top="70.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children></HBox>
+               </bottom>
+               <center>
+                  <HBox fx:id="HBoxAccounts" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="297.0" prefWidth="1274.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane fx:id="anchPaneAccounts" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="280.0" prefWidth="470.0">
+                           <children>
+                              <VBox fx:id="VBoxAccountsChecking" alignment="CENTER_LEFT" layoutX="326.0" layoutY="107.0" prefHeight="200.0" prefWidth="68.0" AnchorPane.bottomAnchor="-10.0" AnchorPane.leftAnchor="348.0" AnchorPane.topAnchor="80.0">
+                                 <padding>
+                                    <Insets bottom="-10.0" />
+                                 </padding></VBox>
+                              <Label fx:id="lblCheckingAccountAllMoney" layoutX="24.0" layoutY="30.0" prefHeight="112.0" prefWidth="361.0" AnchorPane.leftAnchor="0.0" />
+                              <Label fx:id="lblCheckingAccountNumber" layoutX="20.0" layoutY="138.0" prefHeight="65.0" prefWidth="315.0" AnchorPane.leftAnchor="0.0" />
+                              <Label fx:id="lblCheckingAccountsTitle" layoutX="20.0" layoutY="203.0" prefHeight="102.0" prefWidth="269.0" styleClass="lblCheckingAccountTitle" stylesheets="@../css/ClientMenu.css" text="Folyószámla" AnchorPane.leftAnchor="0.0" />
+                              <FontAwesomeIconView fill="WHITE" glyphName="BANK" layoutX="320.0" layoutY="70.0" size="50" textAlignment="CENTER" wrappingWidth="81.0" AnchorPane.bottomAnchor="201.8805809020996" AnchorPane.leftAnchor="340.0" AnchorPane.topAnchor="7.119419097900391" />
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="anchPaneAccountSummary" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="280.0" prefWidth="718.0">
+                           <HBox.margin>
+                              <Insets left="100.0" />
+                           </HBox.margin>
+                           <children>
+                              <Label fx:id="lblAccountSummaryIncome" layoutX="3.0" layoutY="4.0" prefHeight="55.0" prefWidth="300.0" text="Bevétel" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                              <Label fx:id="lblAccountSummaryIncomeResult" layoutX="-4.0" layoutY="56.0" prefHeight="55.0" prefWidth="300.0" styleClass="label-income" stylesheets="@../css/ClientMenu.css" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="50.0" />
+                              <Separator fx:id="sepAccountSummarySeparator" layoutX="40.0" layoutY="150.0" prefHeight="23.0" prefWidth="243.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="240.0" AnchorPane.topAnchor="108.0" />
+                              <Label fx:id="lblAccountSummaryExpenses" layoutY="121.0" prefHeight="55.0" prefWidth="300.0" text="Kiadások" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="135.0" />
+                              <Label fx:id="lblAccountSummaryExpensesResult" layoutY="179.0" prefHeight="55.0" prefWidth="300.0" styleClass="label-expense" stylesheets="@../css/ClientMenu.css" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="185.0" />
+                              <Label fx:id="lblAccountSummaryThisMonth" layoutX="399.0" layoutY="3.0" prefHeight="273.0" prefWidth="220.0" AnchorPane.leftAnchor="400.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets bottom="-50.0" left="15.0" right="15.0" top="30.0" />
+                     </BorderPane.margin>
+                  </HBox>
+               </center>
+            </BorderPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

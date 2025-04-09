@@ -1,0 +1,229 @@
+/* === Oldalsáv teljes VBox === */
+#VBoxAccountsSideMenu {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 20;
+    -fx-padding: 30;
+    -fx-spacing: 15;
+    -fx-alignment: CENTER;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 10, 0.3, 0, 4);
+}
+
+/* === Bank logó és cím === */
+#imgMBankImage {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 6, 0.4, 0, 2);
+}
+
+#lblMBankTitle {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2f80ed;
+    -fx-alignment: CENTER;
+}
+
+#btnDashboard, #btnTransactions, #btnAccounts,
+#btnProfile, #btnLogout, #btnReport {
+    -fx-pref-width: 220;
+    -fx-pref-height: 100;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 14;
+    -fx-cursor: hand;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 0 0 0 10;
+    -fx-content-display: LEFT;
+    -fx-graphic-text-gap: 15px;
+    -fx-wrap-text: false;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 3, 0.3, 0, 1);
+}
+
+/* === Alap gombok színe === */
+#btnDashboard, #btnTransactions, #btnAccounts {
+    -fx-background-color: #f8f9fa;
+    -fx-text-fill: #2f80ed;
+}
+#btnDashboard:hover, #btnTransactions:hover, #btnAccounts:hover {
+    -fx-background-color: #e1ecf9;
+}
+
+/* === Kiemelt gombok színe === */
+#btnProfile {
+    -fx-background-color: #2f80ed;
+    -fx-text-fill: white;
+}
+
+#btnLogout {
+	-fx-background-color: #2f80ed;
+    -fx-text-fill: white;
+    -fx-padding: 0 0 0 10;
+    -fx-graphic-text-gap: 11px;
+}
+
+#btnProfile:hover, #btnLogout:hover {
+    -fx-background-color: #1565c0;
+}
+
+.button {
+    -fx-content-display: LEFT; 
+    -fx-graphic-text-gap: 1px;
+}
+
+.font-awesome-icon {
+    -fx-font-size: 20px;
+}
+
+#spSeparator {
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+#spSeparator .line {
+    -fx-background-color: #2f80ed;
+    -fx-background-insets: 0;
+    -fx-background-radius: 5;
+    -fx-pref-height: 2;
+    -fx-border-color: transparent;
+    -fx-effect: none;
+}
+
+/* === Hiba panelek === */
+#VBoxReportMenu {
+    -fx-background-color: #f1f8ff;
+    -fx-background-radius: 15;
+    -fx-padding: 6;
+    -fx-spacing: 8;
+    -fx-alignment: CENTER;
+}
+
+#lblReportTitle {
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2f80ed;
+    -fx-max-width: 200;
+}
+
+#lblReport{
+    -fx-text-fill: #666;
+    -fx-font-size: 12px;
+    -fx-text-alignment: center;
+    -fx-wrap-text: true;
+}
+
+/* === Hiba gomb === */
+#btnReport {
+    -fx-background-color: #2f80ed;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-background-radius: 10;
+    -fx-padding: 10 8;
+    -fx-cursor: hand;
+    -fx-pref-width: 160;
+    -fx-alignment: CENTER_LEFT;
+    -fx-content-display: LEFT;
+    -fx-graphic-text-gap: 15px;
+}
+
+#btnReport:hover {
+    -fx-background-color: #1565c0;
+}
+
+/* === Címek === */
+#lblAccountsTitle {
+    -fx-font-size: 21px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+}
+
+/* === Alcímek === */
+#lblAccountsNumber,
+#lblAccountsType,
+#lblAccountsMoney,
+#lblAccountsStatus,
+#lblAccountsCreditCardNumber,
+#lblAccountsRegisteredDate {
+    -fx-font-size: 16px;
+    -fx-text-fill: #555;
+    -fx-padding: 8 0 3 0;
+}
+
+#VBoxAccountsStats {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 18;
+    -fx-padding: 30 60 30 30;
+    -fx-spacing: 25;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.08), 12, 0.3, 0, 4);
+    -fx-alignment: TOP_CENTER;
+}
+
+#lblAccountsStatsTitle {
+    -fx-font-size: 21px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+}
+
+#chartPieChartAccountStats {
+    -fx-pref-width: 380;
+    -fx-pref-height: 380;
+}
+
+.chart-legend {
+    -fx-background-color: transparent;
+    -fx-font-size: 14px;
+}
+
+.chart-pie-label {
+    -fx-font-size: 20px;
+    -fx-fill: #444;
+    -fx-font-weight: bold;
+}
+
+.chart-pie data.chart-series-pie:nth-child(1) .chart-pie {
+    -fx-pie-color: #00695c;
+}
+
+.chart-pie data.chart-series-pie:nth-child(2) .chart-pie {
+    -fx-pie-color: #2f80ed;
+}
+
+#sepSpearatorAccounts {
+    -fx-padding: 0;
+}
+
+#sepSpearatorAccounts .line {
+    -fx-background-color: #2f80ed;
+    -fx-background-insets: 0;
+    -fx-background-radius: 3;
+    -fx-pref-width: 2;
+}
+
+#lblAccountsTitle {
+    -fx-font-size: 21px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+}
+
+#lblAccountsNumber,
+#lblAccountsType,
+#lblAccountsMoney,
+#lblAccountsStatus,
+#lblAccountsCreditCardNumber,
+#lblAccountsRegisteredDate {
+    -fx-font-size: 16px;
+    -fx-text-fill: #555;
+    -fx-padding: 8 0 3 0;
+}
+
+#lblAccountsNumberResult,
+#lblAccountsTypeResult,
+#lblAccountsMoneyResult,
+#lblAccountsStatusResult,
+#lblAccountsCreditCardNumberResult,
+#lblAccountsRegisteredDateResult {
+    -fx-font-size: 16px;
+    -fx-text-fill: #212121;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 10 0;
+}

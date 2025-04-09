@@ -1,0 +1,235 @@
+#VBoxProfileSideMenu {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 20;
+    -fx-padding: 30;
+    -fx-spacing: 15;
+    -fx-alignment: CENTER;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 10, 0.3, 0, 4);
+}
+
+#imgMBankImage {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 6, 0.4, 0, 2);
+}
+
+#lblMBankTitle {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2f80ed;
+    -fx-alignment: CENTER;
+}
+
+#btnDashboard, #btnTransactions, #btnAccounts,
+#btnProfile, #btnLogout, #btnReport {
+    -fx-pref-width: 220;
+    -fx-pref-height: 100;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 14;
+    -fx-cursor: hand;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 0 0 0 10;
+    -fx-content-display: LEFT;
+    -fx-graphic-text-gap: 15px;
+    -fx-wrap-text: false;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 3, 0.3, 0, 1);
+}
+
+#btnDashboard, #btnTransactions, #btnAccounts {
+    -fx-background-color: #f8f9fa;
+    -fx-text-fill: #2f80ed;
+}
+#btnDashboard:hover, #btnTransactions:hover, #btnAccounts:hover {
+    -fx-background-color: #e1ecf9;
+}
+
+#btnProfile {
+    -fx-background-color: #2f80ed;
+    -fx-text-fill: white;
+}
+
+#btnLogout {
+	-fx-background-color: #2f80ed;
+    -fx-text-fill: white;
+    -fx-padding: 0 0 0 10;
+    -fx-graphic-text-gap: 11px;
+}
+
+#btnProfile:hover, #btnLogout:hover {
+    -fx-background-color: #1565c0;
+}
+
+.button {
+    -fx-content-display: LEFT;
+    -fx-graphic-text-gap: 1px;
+}
+
+.font-awesome-icon {
+    -fx-font-size: 20px;
+}
+
+#spSeparator {
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+#spSeparator .line {
+    -fx-background-color: #2f80ed;
+    -fx-background-insets: 0;
+    -fx-background-radius: 5; 
+    -fx-pref-height: 2;
+    -fx-border-color: transparent;
+    -fx-effect: none;
+}
+
+#VBoxReportMenu {
+    -fx-background-color: #f1f8ff;
+    -fx-background-radius: 15;
+    -fx-padding: 6;
+    -fx-spacing: 8;
+    -fx-alignment: CENTER;
+}
+
+#lblReportTitle {
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2f80ed;
+    -fx-max-width: 200;
+}
+
+#lblReport{
+    -fx-text-fill: #666;
+    -fx-font-size: 12px;
+    -fx-text-alignment: center;
+    -fx-wrap-text: true;
+}
+
+#btnReport {
+    -fx-background-color: #2f80ed;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-background-radius: 10;
+    -fx-padding: 10 8;
+    -fx-cursor: hand;
+    -fx-pref-width: 160;
+    -fx-alignment: CENTER_LEFT;
+    -fx-content-display: LEFT;
+    -fx-graphic-text-gap: 15px;
+}
+
+#btnReport:hover {
+    -fx-background-color: #1565c0;
+}
+
+#lblProfileTitle,
+#lblProfilePasswordChange,
+#lblProfileEmailChange {
+    -fx-font-size: 21px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+}
+
+#lblProfileUserName,
+#lblProfileFirstName,
+#lblProfileLastName,
+#lblProfileEmail,
+#lblProfilePhoneNumber,
+#lblProfileRegisteredDate {
+    -fx-font-size: 16px;
+    -fx-text-fill: #555;
+    -fx-padding: 8 0 3 0;
+}
+
+
+
+#lblProfileUserNameResult,
+#lblProfileFirstNameResult,
+#lblProfileLastNameResult,
+#lblProfileEmailResult,
+#lblProfilePhoneNumberResult,
+#lblProfileRegisteredDateResult {
+    -fx-font-size: 16px;
+    -fx-text-fill: #212121;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 10 0;
+}
+
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: #cfd8dc;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 12;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 8, 0.3, 0.0, 2.0);
+}
+
+.text-field:hover {
+    -fx-border-color: #90caf9;
+}
+.text-field:focused {
+    -fx-border-color: #2f80ed;
+    -fx-background-color: #f9f9f9;
+    -fx-effect: dropshadow(gaussian, rgba(47,128,237,0.3), 10, 0.4, 0.0, 2.0);
+}
+
+.button {
+    -fx-background-color: #004d40;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 8, 0.3, 0.0, 3.0);
+    -fx-transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+    -fx-background-color: #00695c;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.35), 10, 0.4, 0.0, 4.0);
+}
+
+.password-field {
+    -fx-background-color: white;
+    -fx-border-color: #cfd8dc;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 12;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 8, 0.3, 0.0, 2.0);
+}
+
+.password-field:hover {
+    -fx-border-color: #90caf9;
+}
+
+.password-field:focused {
+    -fx-border-color: #2f80ed;
+    -fx-background-color: #f9f9f9;
+    -fx-effect: dropshadow(gaussian, rgba(47,128,237,0.3), 10, 0.4, 0.0, 2.0);
+}
+
+
+#lblProfilePasswordResult,
+#lblProfileEmailChangeResult {
+    -fx-font-size: 13px;
+    -fx-text-fill: #d32f2f;
+    -fx-padding: 5 0 10 0;
+}
+
+#sepSpearatorProfile {
+    -fx-padding: 0;
+}
+
+#sepSpearatorProfile .line {
+    -fx-background-color: #2f80ed;
+    -fx-background-insets: 0;
+    -fx-background-radius: 3;
+    -fx-pref-width: 2;
+}

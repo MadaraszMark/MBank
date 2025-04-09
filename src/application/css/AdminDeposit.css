@@ -1,0 +1,228 @@
+#VBoxAdminDepositSideMenu {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 20;
+    -fx-padding: 30;
+    -fx-spacing: 15;
+    -fx-alignment: CENTER;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 10, 0.3, 0, 4);
+}
+
+#imgMBankImage {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 6, 0.4, 0, 2);
+}
+
+#lblMBankTitle {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2f80ed;
+    -fx-alignment: CENTER;
+}
+
+#btnCreateClient, #btnClients, #btnDeposit,
+#btnLogout{
+    -fx-pref-width: 220;
+    -fx-pref-height: 100;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 14;
+    -fx-cursor: hand;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 0 0 0 10;
+    -fx-content-display: LEFT;
+    -fx-graphic-text-gap: 15px;
+    -fx-wrap-text: false;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 3, 0.3, 0, 1);
+}
+
+#btnCreateClient, #btnClients, #btnDeposit {
+    -fx-background-color: #f8f9fa;
+    -fx-text-fill: #2f80ed;
+}
+#btnCreateClient:hover, #btnClients:hover, #btnDeposit:hover {
+    -fx-background-color: #e1ecf9;
+}
+
+#btnLogout {
+	-fx-background-color: #2f80ed;
+    -fx-text-fill: white;
+    -fx-padding: 0 0 0 10;
+    -fx-graphic-text-gap: 11px;
+}
+
+.button {
+    -fx-content-display: LEFT;
+    -fx-graphic-text-gap: 1px;
+}
+
+.font-awesome-icon {
+    -fx-font-size: 20px;
+}
+
+#spSeparator {
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+#spSeparator .line {
+    -fx-background-color: #2f80ed;
+    -fx-background-insets: 0;
+    -fx-background-radius: 5;
+    -fx-pref-height: 2;
+    -fx-border-color: transparent;
+    -fx-effect: none;
+}
+
+#HBoxAdminDepositSearch {
+    -fx-spacing: 20;
+    -fx-padding: 40 40 20 40;
+    -fx-alignment: CENTER;
+    
+}
+
+#lblAdminDepositSearchTitle {
+    -fx-font-size: 22px;
+    -fx-font-weight: normal;
+    -fx-text-fill: #555;
+    -fx-padding: 10 0 10 0;
+    -fx-font-family: "Poppins";
+}
+
+#txtAdminDepostSearchByNumber {
+    -fx-background-color: white;
+    -fx-border-color: #cfd8dc;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 6, 0.3, 0, 1.5);
+}
+
+#txtAdminDepostSearchByNumber:hover {
+    -fx-border-color: #90caf9;
+}
+
+#txtAdminDepostSearchByNumber:focused {
+    -fx-border-color: #2f80ed;
+    -fx-background-color: #f9f9f9;
+    -fx-effect: dropshadow(gaussian, rgba(47,128,237,0.3), 8, 0.4, 0.0, 2.0);
+}
+
+/* === Keresés gomb === */
+#btnAdminDepositSearchByNumber {
+    -fx-background-color: #004d40;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 6, 0.3, 0, 2);
+}
+
+#btnAdminDepositSearchByNumber:hover {
+    -fx-background-color: #00695c;
+}
+
+/* === Befizetés szekció === */
+#VBoxAdminDepositAmount {
+    -fx-spacing: 20;
+    -fx-alignment: CENTER;
+}
+
+#lblAdminDepositTitle,
+#lblAdminDepositAmount {
+    -fx-font-size: 22px;
+    -fx-font-weight: normal;
+    -fx-text-fill: #555;
+    -fx-font-family: "Poppins";
+}
+
+#txtAdminDepositAmount {
+    -fx-background-color: white;
+    -fx-border-color: #cfd8dc;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-font-size: 16px;
+    -fx-text-fill: #333;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 6, 0.3, 0.0, 2.0);
+}
+
+#txtAdminDepositAmount:hover {
+    -fx-border-color: #90caf9;
+}
+#txtAdminDepositAmount:focused {
+    -fx-border-color: #2f80ed;
+    -fx-background-color: #f9f9f9;
+    -fx-effect: dropshadow(gaussian, rgba(47,128,237,0.3), 10, 0.4, 0.0, 2.0);
+}
+
+/* === Befizetés gomb === */
+#btnAdminDeposit {
+    -fx-background-color: #004d40;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 8, 0.3, 0.0, 3.0);
+}
+
+#btnAdminDeposit:hover {
+    -fx-background-color: #00695c;
+}
+
+#txtAdminDepostSearchByNumber {
+    -fx-background-color: white;
+    -fx-border-color: #cfd8dc;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 12;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 8, 0.3, 0, 2);
+}
+
+#txtAdminDepostSearchByNumber:hover {
+    -fx-border-color: #90caf9;
+}
+
+#txtAdminDepostSearchByNumber:focused {
+    -fx-border-color: #2f80ed;
+    -fx-background-color: #f9f9f9;
+    -fx-effect: dropshadow(gaussian, rgba(47,128,237,0.3), 10, 0.4, 0, 2);
+}
+
+#lblAdminDepositSearchResult {
+    -fx-font-size: 22px;
+    -fx-text-fill: #1a1a1a;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-background-color: #f5f5f5;
+    -fx-border-color: #cfd8dc;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.08), 10, 0.3, 0, 3);
+    -fx-max-width: 900;
+    -fx-wrap-text: true;
+    -fx-alignment: center-left;
+}
+
+#lblAdminDepositResult {
+    -fx-font-size: 16px;
+    -fx-padding: 10 0 10 0;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+.success {
+    -fx-text-fill: #2ecc71;
+    -fx-font-weight: bold;
+}
+
+.error {
+    -fx-text-fill: #e53935;
+    -fx-font-weight: bold;
+}
+
+

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="1100.0" prefWidth="1500.0" stylesheets="@../css/AdminClients.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.AdminClientsController">
+   <children>
+      <BorderPane prefHeight="1100.0" prefWidth="1500.0">
+         <left>
+            <VBox fx:id="VBoxAdminClientsSideMenu" prefHeight="1070.0" prefWidth="216.0" stylesheets="@../css/Admin.css" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="imgMBankImage" fitHeight="65.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/MBankIco.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblMBankTitle" prefHeight="52.0" prefWidth="205.0" stylesheets="@../css/ClientMenu.css" text="MBank" />
+                  <Button fx:id="btnCreateClient" mnemonicParsing="false" onMouseClicked="#handleAdmin" prefHeight="55.0" prefWidth="208.0" stylesheets="@../css/ClientMenu.css" text="Ügyfél">
+                     <graphic>
+                        <FontAwesomeIconView fx:id="fontClientCreate" glyphName="PLUS" scaleZ="0.0" size="20" translateX="5.0" />
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="30.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnClients" mnemonicParsing="false" prefHeight="55.0" prefWidth="208.0" text="Ügyfelek">
+                     <graphic>
+                        <FontAwesomeIconView fx:id="fontClients" glyphName="LIST" size="20" translateX="5.0" />
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnDeposit" mnemonicParsing="false" onMouseClicked="#handleDeposit" prefHeight="55.0" prefWidth="208.0" stylesheets="@../css/ClientMenu.css" text="Befizetés">
+                     <graphic>
+                        <FontAwesomeIconView fx:id="fontAccounts" glyphName="MONEY" size="20" translateX="5.0" />
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Separator fx:id="spSeparator" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="150.0" styleClass="line" stylesheets="@../css/ClientMenu.css" />
+                  <Button fx:id="btnLogout" mnemonicParsing="false" onMouseClicked="#handleLogout" prefHeight="55.0" prefWidth="208.0" text="Kijelentkezés">
+                     <graphic>
+                        <FontAwesomeIconView fx:id="fontLogout" fill="WHITE" glyphName="EXTERNAL_LINK" size="20" translateX="4.0" />
+                     </graphic>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <VBox fx:id="VBoxAdminMenu" alignment="CENTER" prefHeight="200.0" prefWidth="186.0">
+                     <VBox.margin>
+                        <Insets bottom="-15.0" left="-15.0" right="-15.0" top="425.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="lblAdmin" alignment="CENTER" prefHeight="118.0" prefWidth="155.0" text="Admin">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="15.0" left="10.0" top="15.0" />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+         <center>
+            <VBox fx:id="VBoxAdminClientsList" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="lblAdminClientsTitle" prefHeight="122.0" prefWidth="1275.0" text="Ügyfelek" />
+                  <ScrollPane fx:id="spScrollPaneAdminClientsList" fitToWidth="true" prefHeight="959.0" prefWidth="1274.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <content>
+                        <VBox fx:id="VBoxScrollPaneAdminClientList" prefWidth="1081.0" spacing="20.0" />
+                     </content>
+                  </ScrollPane>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+               </BorderPane.margin>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

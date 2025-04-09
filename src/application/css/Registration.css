@@ -1,0 +1,95 @@
+.root {
+    -fx-background-color: #f4f6f8;
+    -fx-font-family: 'Segoe UI';
+}
+
+#VBoxImage {
+    -fx-background-color: #1f1f2e;
+}
+
+#lblRegistrationTitle {
+    -fx-font-size: 36px;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+#btnBack {
+	-fx-background-color: linear-gradient(to right, #2f80ed, #56ccf2);
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 14 18;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0.5, 0, 1);
+}
+
+.label {
+    -fx-font-size: 20px;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+.text-field, .password-field {
+    -fx-background-radius: 10;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #dcdde1;
+    -fx-border-radius: 10;
+    -fx-padding: 12 14;
+    -fx-font-size: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 4, 0.5, 0, 1);
+}
+
+#btnRegister {
+    -fx-background-color: linear-gradient(to right, #2f80ed, #56ccf2);
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 14 18;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0.5, 0, 1);
+}
+
+#btnRegister:hover {
+    -fx-background-color: linear-gradient(to right, #1366d6, #4bb2ec);
+}
+
+#btnExit {
+    -fx-background-color: #fff5f5;
+    -fx-text-fill: #e74c3c;
+    -fx-border-color: transparent;
+    -fx-background-radius: 10;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 18;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(231, 76, 60, 0.15), 4, 0.5, 0, 1);
+}
+
+#btnExit:hover {
+    -fx-background-color: #ffe5e5;
+    -fx-text-fill: #c0392b;
+}
+
+#lblMessage {
+    -fx-font-size: 15px;
+    -fx-alignment: center;
+}
+
+.success {
+    -fx-text-fill: #2ecc71;
+}
+.error {
+    -fx-text-fill: #e74c3c;
+}
+
+.tooltip {
+    -fx-background-color: #1f1f2e;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-background-radius: 6;
+    -fx-padding: 8;
+}
+
+

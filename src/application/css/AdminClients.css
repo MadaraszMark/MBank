@@ -1,0 +1,108 @@
+#VBoxAdminClientsSideMenu {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 20;
+    -fx-padding: 30;
+    -fx-spacing: 15;
+    -fx-alignment: CENTER;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 10, 0.3, 0, 4);
+}
+
+#imgMBankImage {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 6, 0.4, 0, 2);
+}
+
+#lblMBankTitle {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2f80ed;
+    -fx-alignment: CENTER;
+}
+
+#btnCreateClient, #btnClients, #btnDeposit,
+#btnLogout{
+    -fx-pref-width: 220;
+    -fx-pref-height: 100;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 14;
+    -fx-cursor: hand;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 0 0 0 10;
+    -fx-content-display: LEFT;
+    -fx-graphic-text-gap: 15px;
+    -fx-wrap-text: false;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 3, 0.3, 0, 1);
+}
+
+#btnCreateClient, #btnClients, #btnDeposit {
+    -fx-background-color: #f8f9fa;
+    -fx-text-fill: #2f80ed;
+}
+#btnCreateClient:hover, #btnClients:hover, #btnDeposit:hover {
+    -fx-background-color: #e1ecf9;
+}
+
+#btnLogout {
+	-fx-background-color: #2f80ed;
+    -fx-text-fill: white;
+    -fx-padding: 0 0 0 10;
+    -fx-graphic-text-gap: 11px;
+}
+
+.button {
+    -fx-content-display: LEFT;
+    -fx-graphic-text-gap: 1px;
+}
+
+.font-awesome-icon {
+    -fx-font-size: 20px;
+}
+
+#spSeparator {
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+#spSeparator .line {
+    -fx-background-color: #2f80ed;
+    -fx-background-insets: 0;
+    -fx-background-radius: 5;
+    -fx-pref-height: 2;
+    -fx-border-color: transparent;
+    -fx-effect: none;
+}
+
+#lblAdminClientsTitle {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #212121;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 20 0 10 15;
+}
+
+#spScrollPaneAdminClientsList {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 10 15 15 15;
+}
+
+#spScrollPaneAdminClientsList .viewport {
+    -fx-background-color: transparent;
+}
+
+#VBoxAdminClientsList {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 20;
+    -fx-padding: 30;
+    -fx-spacing: 15;
+    -fx-alignment: CENTER;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 10, 0.3, 0, 4);
+}
+
+#lblAdmin {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #00695c;
+    -fx-alignment: CENTER;
+}

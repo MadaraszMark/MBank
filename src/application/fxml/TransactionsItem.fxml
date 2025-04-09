@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="80.0" prefWidth="800.0" stylesheets="@../css/TransactionsItem.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.TransactionsItemController">
+   <children>
+      <AnchorPane fx:id="anchPaneTransactionBox" prefHeight="86.0" prefWidth="1120.0">
+         <children>
+            <FontAwesomeIconView fx:id="fontAwesomeIconArrowRight" glyphName="LONG_ARROW_RIGHT" layoutX="20.0" layoutY="40.0" size="35" styleClass="arrow-muted" wrappingWidth="55.0" />
+            <FontAwesomeIconView fx:id="fontAwesomeIconArrowLeft" glyphName="LONG_ARROW_LEFT" layoutX="20.0" layoutY="70.0" size="35" styleClass="arrow-muted" wrappingWidth="32.0" />
+            <Label fx:id="lblTransactionsDate" layoutX="120.0" layoutY="14.0" prefHeight="57.0" prefWidth="116.0" text="2011-12-33" AnchorPane.leftAnchor="145.0" />
+            <Label fx:id="lblTransactionsToName" layoutX="240.0" layoutY="14.0" prefHeight="57.0" prefWidth="116.0" text="\@Mark" AnchorPane.leftAnchor="314.0" />
+            <Separator fx:id="sepSeparatorTransactions" layoutX="370.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="86.0" prefWidth="37.0" AnchorPane.leftAnchor="444.0" />
+            <Label fx:id="lblTransactionsFromName" layoutX="476.0" layoutY="14.0" prefHeight="57.0" prefWidth="162.0" text="\@Mark" AnchorPane.leftAnchor="550.0" />
+            <FontAwesomeIconView fx:id="fontAwesomeIconBell" glyphName="BELL" layoutX="641.0" layoutY="53.0" size="30" AnchorPane.leftAnchor="920.0" />
+            <Label fx:id="lblTransactionsMoney" alignment="CENTER" layoutX="691.0" layoutY="14.0" prefHeight="59.0" prefWidth="116.0" text="100 HUF" AnchorPane.leftAnchor="980.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

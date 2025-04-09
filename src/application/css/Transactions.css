@@ -1,0 +1,173 @@
+#VBoxTransactionsSideMenu {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 20;
+    -fx-padding: 30;
+    -fx-spacing: 15;
+    -fx-alignment: CENTER;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 10, 0.3, 0, 4);
+}
+
+#imgMBankImage {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 6, 0.4, 0, 2);
+}
+
+#lblMBankTitle {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2f80ed;
+    -fx-alignment: CENTER;
+}
+
+#btnDashboard, #btnTransactions, #btnAccounts,
+#btnProfile, #btnLogout, #btnReport {
+    -fx-pref-width: 220;
+    -fx-pref-height: 100;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 14;
+    -fx-cursor: hand;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 0 0 0 10;
+    -fx-content-display: LEFT;
+    -fx-graphic-text-gap: 15px;
+    -fx-wrap-text: false;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 3, 0.3, 0, 1);
+}
+
+#btnDashboard, #btnTransactions, #btnAccounts {
+    -fx-background-color: #f8f9fa;
+    -fx-text-fill: #2f80ed;
+}
+#btnDashboard:hover, #btnTransactions:hover, #btnAccounts:hover {
+    -fx-background-color: #e1ecf9;
+}
+
+#btnProfile {
+    -fx-background-color: #2f80ed;
+    -fx-text-fill: white;
+}
+
+#btnLogout {
+	-fx-background-color: #2f80ed;
+    -fx-text-fill: white;
+    -fx-padding: 0 0 0 10;
+    -fx-graphic-text-gap: 11px;
+}
+
+#btnProfile:hover, #btnLogout:hover {
+    -fx-background-color: #1565c0;
+}
+
+.button {
+    -fx-content-display: LEFT;
+    -fx-graphic-text-gap: 1px;
+}
+
+.font-awesome-icon {
+    -fx-font-size: 20px;
+}
+
+#spSeparator {
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+#spSeparator .line {
+    -fx-background-color: #2f80ed;
+    -fx-background-insets: 0;
+    -fx-background-radius: 5;
+    -fx-pref-height: 2;
+    -fx-border-color: transparent;
+    -fx-effect: none;
+}
+
+#VBoxReportMenu {
+    -fx-background-color: #f1f8ff;
+    -fx-background-radius: 15;
+    -fx-padding: 6;
+    -fx-spacing: 8;
+    -fx-alignment: CENTER;
+}
+
+#lblReportTitle {
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2f80ed;
+    -fx-max-width: 200;
+}
+
+#lblReport{
+    -fx-text-fill: #666;
+    -fx-font-size: 12px;
+    -fx-text-alignment: center;
+    -fx-wrap-text: true;
+}
+
+#btnReport {
+    -fx-background-color: #2f80ed;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-background-radius: 10;
+    -fx-padding: 10 8;
+    -fx-cursor: hand;
+    -fx-pref-width: 160;
+    -fx-alignment: CENTER_LEFT;
+    -fx-content-display: LEFT;
+    -fx-graphic-text-gap: 15px;
+}
+
+#btnReport:hover {
+    -fx-background-color: #1565c0;
+}
+
+#lblTransactionsTitle {
+    -fx-font-size: 42px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+    -fx-alignment: CENTER;
+}
+
+#VBoxTransactionsScrollPane {
+    -fx-alignment: CENTER;
+    -fx-spacing: 20;
+    -fx-padding: 30 0 30 0;
+    -fx-max-width: 1203px;
+}
+
+
+#scScrollPaneTransactions {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+#scScrollPaneTransactions .track {
+    -fx-background-color: transparent;
+}
+
+#scScrollPaneTransactions .scroll-bar:vertical .thumb {
+    -fx-background-color: #2f80ed;
+    -fx-background-radius: 10;
+    -fx-pref-width: 10px;
+    -fx-opacity: 0.8;
+}
+
+#scScrollPaneTransactions .scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #1565c0;
+    -fx-opacity: 1;
+}
+
+#scScrollPaneTransactions .increment-button,
+#scScrollPaneTransactions .decrement-button {
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+    -fx-shape: "";
+}
+
+#scScrollPaneTransactions .scroll-bar:vertical {
+    -fx-pref-width: 14px;
+}
+

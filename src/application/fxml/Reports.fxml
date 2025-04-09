@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" stylesheets="@../css/Reports.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.ReportsController">
+   <children>
+      <BorderPane prefHeight="500.0" prefWidth="800.0">
+         <top>
+            <Label fx:id="lblReportsTitle" prefHeight="119.0" prefWidth="805.0" text="Írd le a hibát vagy ötletedet" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <TextArea fx:id="txtReportsField" prefHeight="243.0" prefWidth="800.0" wrapText="true" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="20.0" left="30.0" right="30.0" />
+               </BorderPane.margin>
+            </TextArea>
+         </center>
+         <bottom>
+            <Button fx:id="btnReportsSend" mnemonicParsing="false" prefHeight="62.0" prefWidth="361.0" text="Küldés" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="30.0" />
+               </BorderPane.margin>
+            </Button>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
