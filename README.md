@@ -28,11 +28,7 @@ _Built with the tools and technologies:_
 
 ## 🔍 Áttekintés
 
-Az **MBank** egy modern, JavaFX alapú internetbanki alkalmazás, amely lehetővé teszi a felhasználók számára a pénzügyeik kezelését egy letisztult és reszponzív felületen keresztül.
-
-### ❓ Miért pont MBank?
-
-Ez a projekt leegyszerűsíti a banki műveleteket, miközben biztonságos és hatékony felhasználói élményt kínál.
+Az **MBank** egy modern, JavaFX alapú internetbanki alkalmazás, amely lehetővé teszi a felhasználók számára a pénzügyeik kezelését egy letisztult és reszponzív felületen keresztül.  
 
 #### 🎯 Fő funkciók
 
@@ -65,3 +61,22 @@ A projekt futtatásához szükséges:
 1. **Kódbázis klónozása**:
    ```bash
    git clone https://github.com/sajatfelhasznalo/mbank.git
+2. **Adatbázis létrehozása**:
+   ```bash
+   Nyisd meg a MySQL Workbench-et vagy más SQL klienst.
+   Futtasd a mbank/install.sql fájlt (vagy az application._install Java osztályt), amely automatikusan létrehozza az összes táblát és kapcsolatot.
+3. **Persistance.xml beállítása**
+
+### 🧪 Használat  
+- Bejelentkezés: Felhasználónév + jelszó.
+- Főoldal: Számlaegyenleg, utolsó tranzakciók (max. 4).
+- Átutalás: Címzett számlaszám + összeg + opcionális üzenet.
+- Profil: Felhasználói adatok megtekintése.
+- Számlák: Jelenlegi folyószámla információk, formázottan.
+- Tranzakciók: Teljes tranzakciós előzmény, szűrhető.
+- Admin felület: Új ügyfelek létrehozása, hibák listázása.
+- Hibabejelentés: Visszajelzés küldése külön ablakból.
+
+*Fejlesztő: Márk – 2025, JavaFX tanulóprojekt*
+
+   
